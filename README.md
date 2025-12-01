@@ -32,10 +32,9 @@ Users can browse a catalog of desserts, add or remove items from a cart, see the
 
 #### Clone The Repo
 
-````
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>```
-````
+```
+git clone https://github.com/renato-vn/products-with-cart.git
+```
 
 #### Install Dependencies
 
