@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Red_Hat_Text/RedHatText-VariableFont_wght.ttf")
+    format("woff2");
+}
+
+@theme {
+  --color-Red: hsl(14, 86%, 42%);
+  --color-Green: hsl(159, 69%, 38%);
+  --color-Rose-50: hsl(20, 50%, 98%);
+  --color-Rose-100: hsl(13, 31%, 94%);
+  --color-Rose-300: hsl(14, 25%, 72%);
+  --color-Rose-400: hsl(7, 20%, 60%);
+  --color-Rose-500: hsl(12, 20%, 44%);
+  --color-Rose-900: hsl(14, 65%, 9%);
+
+  --font-Red-Hat-Text: "Red Hat Text";
+}
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900 font-Red-Hat-Text;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
