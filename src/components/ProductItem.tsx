@@ -18,6 +18,9 @@ export const ProductItem = ({ product }: Props) => {
     handleDecrement,
   } = useCart(product.id);
 
+  const imageStyle = `object-contain rounded-lg mt-8 ${
+    isInCart ? "outline-1 outline-Red" : ""
+  }`;
   const buttonStyle = `absolute left-1/2 -translate-x-1/2 -bottom-6 w-48 lg:w-32 flex items-center justify-center ${
     isInCart ? "bg-Red" : "bg-white"
   } py-3 md:py-2 md:text-sm rounded-full cursor-pointer hover:brightness-90 transition duration-300 border border-Red shadow-sm`;
@@ -29,7 +32,7 @@ export const ProductItem = ({ product }: Props) => {
     >
       <div className="relative">
         <img
-          className="object-contain rounded-lg mt-8"
+          className={imageStyle}
           src={isMobile ? product.image.mobile : product.image.desktop}
           alt={product.name}
         />
